@@ -50,7 +50,7 @@ Once the droplet is running, go to the droplet page, explore the tabs:
 Open up the command line:
 
 - options on Mac: [Xcode](https://developer.apple.com/xcode/), [brew](https://brew.sh/), [VS Code](https://code.visualstudio.com/), [iTerm2](https://iterm2.com/)
-- Windows: [WSL]](https://docs.microsoft.com/en-us/windows/wsl/install-win10), [VS Code](https://code.visualstudio.com/)
+- Windows: [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10), [VS Code](https://code.visualstudio.com/)
 - RStudio comes with some nice features, like terminal, git
 
 Log into the droplet:
