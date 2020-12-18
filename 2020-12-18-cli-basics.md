@@ -45,7 +45,7 @@ Once the droplet is running, go to the droplet page, explore the tabs:
 - IP, floating IP
 - Monitoring
 - Resizing
-- Shudoen, destroy
+- destroy
 
 Open up the command line:
 
@@ -53,7 +53,7 @@ Open up the command line:
 - Windows: [WSL]](https://docs.microsoft.com/en-us/windows/wsl/install-win10), [VS Code](https://code.visualstudio.com/)
 - RStudio comes with some nice features, like terminal, git
 
-Lon into the droplet:
+Log into the droplet:
 
 - `ssh root@IP_address`
 - `ssh -i ~/.ssh/id_rsa root@IP_address`
@@ -62,7 +62,7 @@ Lon into the droplet:
 - where am I: `pwd`
 
 ```bash
-root user and sudo
+# root user and sudo
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install git
@@ -92,8 +92,8 @@ cd newdir
 man cp
 # escape with q
 
-cp ~/nerdalk/test.txt ~/newdir/test.txt
-rm ~/nerdalk/test.txt
+cp ~/nerdtalk/test.txt ~/newdir/test.txt
+rm ~/nerdtalk/test.txt
 # rm -rf ... # force, recursive
 # be careful with /dir vs / dir
 # you don't want rm -rf /
