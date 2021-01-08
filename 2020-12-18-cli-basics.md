@@ -114,7 +114,6 @@ sftp root@IP_address
 ?
 ```
 
-|--------|--------|
 | Local  | Remote |
 |--------|--------|
 | `lpwd` | `pwd`  |
