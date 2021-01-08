@@ -9,3 +9,4 @@ Upcoming topics
 - github pages (pkgdown, blogdown, bookdown)
 - github actions (CICD in general)
 - plumber (ald related options)
+- Shiny
