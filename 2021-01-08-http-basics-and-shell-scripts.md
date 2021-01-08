@@ -12,24 +12,33 @@ TLD, URL, parameters, head, body, request/response, protocols:
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 
-check some resources (pages, etc) and show around in developer tools
+Check some resources (pages, etc) and show around in developer tools, show page source, inspect requests/headers/status codes.
 
-httr vignette
+Do this from R: [httr vignette](https://cran.r-project.org/web/packages/httr/vignettes/quickstart.html)
 
 ## chow/chmod
 
 https://www.baeldung.com/linux/chown-chmod-permissions
 
+- `chown`: change owner, useful to restrict privileges when running scripts
+- `chmod`: change mode, useful to make scripts executable (`chmod +x script.sh`)
+
 ## Shell scripts
 
 Shell novice (loops and scripts): https://swcarpentry.github.io/shell-novice/
 
+Look at Loops and Shell scripts.
+
 ### Example 1
+
+Build and deploy bookdown site (this used Travis and GitHub pages):
 
 - https://github.com/psolymos/qpad-book/blob/master/_build.sh
 - https://github.com/psolymos/qpad-book/blob/master/_deploy.sh
 
 ### Example 2
+
+How to use flags and have the script act on an input file (find lines and pull images based on that info):
 
 `setup.sh`: this is run locally
 
@@ -46,9 +55,8 @@ The following command line arguments need to be passed to the `setup.sh` script:
 What the script does:
 
 1. Copies the `application.yml` to the droplet,
-2. logs into private registry (optional),
 3. pulls the docker images listed in the `application.yml` file,
-4. and restarts ShinyProxy.
+4. and restarts services.
 
 
 ```bash
@@ -61,15 +69,6 @@ What the script does:
 # -i: ssh key
 # -s: user@ip_address
 # -f: /path/to/application.yml file
-
-# Registry login
-#
-# Uncomment lines as needed for registry login.
-# Log in to droplet via ssh and add access token into a file:
-# `echo your_token > ./token.txt`
-# this will be used to pass token via stdin. 
-# Change `--username username` to your username.
-
 
 while getopts i:s:f: flag
 do
@@ -84,8 +83,6 @@ echo ">>> Copying $file to droplet"
 scp -i $key $file $server:/etc/shinyproxy/application.yml
 
 ssh -i $key $server /bin/bash << EOF
-#echo ">>> Logging into registry"
-#cat ./token.txt | docker login --username username --password-stdin registry.gitlab.com
 echo ">>> Updating docker images according to application.yaml"
 wget -O ./update.sh https://raw.githubusercontent.com/analythium/shinyproxy-1-click/master/digitalocean/update.sh
 bash ./update.sh /etc/shinyproxy/application.yml
@@ -98,7 +95,7 @@ echo ">>> Done"
 EOF
 ```
 
-`update.sh`
+`update.sh` that is used inside of the previous script
 
 ```bash
 #!/bin/bash
