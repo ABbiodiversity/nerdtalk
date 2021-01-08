@@ -114,11 +114,12 @@ sftp root@IP_address
 ?
 ```
 
-|-------|--------|
-| Local | Remote |
-| `lpwd` | `pwd`|
-| `lls` | `ls`|
-| `lcd` | `cd`|
+|--------|--------|
+| Local  | Remote |
+|--------|--------|
+| `lpwd` | `pwd`  |
+| `lls`  | `ls`   |
+| `lcd`  | `cd`   |
 
 ```bash
 get ~/newdir/test.txt
