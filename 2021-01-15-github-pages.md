@@ -71,3 +71,8 @@ Our goal is to understand this: https://github.com/ABbiodiversity/species-manual
 - [`index.Rmd`](https://github.com/ABbiodiversity/species-manual/blob/master/index.Rmd)
 - [Chapters](https://github.com/ABbiodiversity/species-manual/blob/master/01-intro.Rmd) with all the bells and whistles of Rmd
 
+Besides the html version that uses Hugo behind the scenes, we can also get pdf/epub/mobi formats, all based on [pandoc](https://pandoc.org/).
+
+## Next up
+
+CI/CD, GitHub actions, where we are getting dangerously close to talking about Docker...
