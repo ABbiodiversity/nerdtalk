@@ -35,3 +35,39 @@ Example 2: full statis website
 - source: https://github.com/borealbirds/borealbirds.github.io/tree/dev
 - deployment via gh actions: https://github.com/borealbirds/borealbirds.github.io/blob/dev/.github/workflows/build.yml
 
+### Project pages
+
+Example 1: R package documentation using pkgdown
+
+- source: https://github.com/psolymos/bSims
+- `pkgdown::build_site()` will deploy into the `/docs` folder
+- and we get this: https://peter.solymos.org/bSims/
+- can be set up to auto deploy but I was lazy and it is not really needed that often
+
+Example 2: personal websites and blogs using blogdown
+
+- lots of examples: https://awesome-blogdown.com/
+- supports Hugo and Jakyll out of the box (but there are more generators out there: https://jamstack.org/generators/)
+- useful if your blog is based on Rmd (lots of stats/ML/ggplot with code + output)
+
+Example 3: hand crafter Jekyll website
+
+- Jekyll docs: https://jekyllrb.com/
+- https://borealbirds.github.io/ring-of-fire/
+- [`_config.yml`](https://github.com/borealbirds/ring-of-fire/blob/main/docs/_config.yml)
+- [markdown files with yaml header](https://raw.githubusercontent.com/borealbirds/ring-of-fire/main/docs/index.md)
+- [layout](https://github.com/borealbirds/ring-of-fire/blob/main/docs/_layouts/default.html#L117)
+- [species pages](https://raw.githubusercontent.com/borealbirds/ring-of-fire/main/docs/species/AMRO/index.md)
+- templating was done using the [wisker](https://github.com/borealbirds/GNM/blob/master/regions/ring-of-fire/rof.R#L231) package
+
+### Documentation with bookdown
+
+- https://bookdown.org/
+- output: https://peter.solymos.org/qpad-book/ html + pdf + ebook
+- source: https://github.com/psolymos/qpad-book
+
+Our goal is to understand this: https://github.com/ABbiodiversity/species-manual
+
+- [`index.Rmd`](https://github.com/ABbiodiversity/species-manual/blob/master/index.Rmd)
+- [Chapters](https://github.com/ABbiodiversity/species-manual/blob/master/01-intro.Rmd) with all the bells and whistles of Rmd
+
