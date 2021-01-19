@@ -21,6 +21,7 @@
 
 - [SW Carpentry shell novice lesson](https://swcarpentry.github.io/shell-novice/)
 - [DO ssh essentials](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
+- [Windows WSL](https://docs.microsoft.com/en-us/windows/wsl/)
 
 ## Session
 
