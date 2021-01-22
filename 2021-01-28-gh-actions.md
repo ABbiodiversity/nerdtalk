@@ -1,6 +1,6 @@
 # GitHub actions
 
-- [officiel docs](https://github.com/features/actions)
+- [Official docs](https://github.com/features/actions)
 - [R related actions](https://github.com/r-lib/actions)
 
 Use cases:
