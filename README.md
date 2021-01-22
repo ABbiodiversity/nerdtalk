@@ -6,10 +6,12 @@
 - [2020-12-18](2020-12-18-cli-basics.md): ssh/terminal basics
 - [2021-01-08](2021-01-08-http-basics-and-shell-scripts.md): http basics and shell scripts
 - [2021-01-15](2021-01-15-github-pages.md): GitHub pages and static websites
+- [2020-01-28](): bookdown show and tell, GitHub actions intro (CICD)
 
 ## Upcoming topics
 
-- github actions (CICD in general)
+- R packages
+- testing R code/packages
 - plumber (ald related options)
 - Shiny
 
