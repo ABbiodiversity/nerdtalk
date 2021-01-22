@@ -10,8 +10,6 @@ After an overview, we will concentrate on bookdown as the lowest barrier option 
 
 Also [pagedown](https://github.com/rstudio/pagedown) and [pagedreport](https://pagedreport.rfortherestofus.com/).
 
-__!!! Reschedule for Thursday morning so that Erin can make it? !!!__
-
 ## GitHub pages
 
 > Websites for you and your projects
