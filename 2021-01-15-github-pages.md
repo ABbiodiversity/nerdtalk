@@ -8,6 +8,8 @@ e.g. based on pkgdown (https://pkgdown.r-lib.org/), blogdown (https://bookdown.o
  
 After an overview, we will concentrate on bookdown as the lowest barrier option for creating manuals for various projects.
 
+Also [pagedown](https://github.com/rstudio/pagedown) and [pagedreport](https://pagedreport.rfortherestofus.com/).
+
 __!!! Reschedule for Thursday morning so that Erin can make it? !!!__
 
 ## GitHub pages
