@@ -13,6 +13,7 @@
 
 ## Upcoming topics
 
+- parallel computations (promises, future, https://github.com/psolymos/the-road-to-progress)
 - plumber
 - Shiny advanced
 - Docker
