@@ -7,9 +7,8 @@
 - [2021-01-08](2021-01-08-http-basics-and-shell-scripts.md): http basics and shell scripts
 - [2021-01-15](2021-01-15-github-pages.md): GitHub pages and static websites
 - [2021-01-28](2021-01-28-gh-actions.md): bookdown show and tell, GitHub actions intro (CICD)
-- [2021-02-11](): R packagees and testing
-- [2021-02-25](): R markdown
-- [2021-03-11](): Shiny apps
+- 2021-02-11: R packagees and testing
+- [2021-03-11](2021-03-11-shiny.md): Shiny apps
 
 ## Upcoming topics
 
@@ -17,6 +16,7 @@
 - plumber
 - Shiny advanced
 - Docker
+- R markdown
 
 ## Project ideas
 
