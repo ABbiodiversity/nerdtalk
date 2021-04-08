@@ -9,6 +9,7 @@
 - [2021-01-28](2021-01-28-gh-actions.md): bookdown show and tell, GitHub actions intro (CICD)
 - 2021-02-11: R packagees and testing
 - [2021-03-11](2021-03-11-shiny.md): Shiny apps
+- [2021-04-08](2021-04-08-shiny-2.md): Shiny Show and Tell
 
 ## Upcoming topics
 
