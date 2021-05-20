@@ -1,0 +1,37 @@
+# Bioacoustic Unit has developed an app using Epicollect that allows technicians to enter their visit and other metadata while in the field to supplement paper.
+
+```{r}
+
+library(httr)
+library(jsonlite)
+
+cID<-"2431" # client ID
+secret<- "" # client secret
+proj.slug<- "bu-aru-visits" # project slug
+form.ref<- "aru-deployment" # form reference
+
+#Create a POST request to authorize 
+res <- POST("https://five.epicollect.net/api/oauth/token",
+            body = list(grant_type = "client_credentials",
+                        client_id = cID,
+                        client_secret = secret))
+                        
+#Make sure everything is connected
+http_status(res)
+
+#Create the token - I suppose you could just also do this withint the GET request. 
+token <- content(res)$access_token
+
+# Create the url to access the data - I'm using a JSON format here. 
+url.form<- paste("https://five.epicollect.net/api/export/entries/", proj.slug, "?map_index=0&form_ref=", form.ref, "&format=json", sep= "")
+
+# Get the data from the project
+res1<- GET(url.form, add_headers("Authorization" = paste("Bearer", token)))
+
+# Make sure it worked
+http_status(res1)
+
+# Create a list 
+ct1<- fromJSON(rawToChar(content(res1)))
+
+# Next will be formatting everything to WildTrax standard... 
